@@ -1,21 +1,66 @@
-import { Layout, Space } from 'antd'
-const { Header, Content } = Layout
-
-import styles from '../styles/home.less'
+import { Card } from 'antd'
+const { Meta } = Card
+import '../styles/home.css'
 
 function Home() {
     return (
-        <Space
-            direction="vertical"
-            style={{
-            width: '100%',
-            }}
-            size={[0, 48]}
-        >
-            
-            <Header style={styles.header}>Zelene Blockchain</Header>
 
-        </Space>
+        <div className='card-wrap'>
+            <Card
+            hoverable
+            style={{
+                width: 240,
+            }}
+            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+            <Card
+            hoverable
+            style={{
+                width: 240,
+            }}
+            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+            <Card
+            hoverable
+            style={{
+                width: 240,
+            }}
+            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+            <Card
+            hoverable
+            style={{
+                width: 240,
+            }}
+            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+            <Card
+            hoverable
+            style={{
+                width: 240,
+            }}
+            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+            <Card
+            hoverable
+            style={{
+                width: 240,
+            }}
+            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            >
+            <Meta title="Europe Street beat" description="www.instagram.com" />
+            </Card>
+        </div>
     )
 }
 
