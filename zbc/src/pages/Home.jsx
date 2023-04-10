@@ -1,11 +1,12 @@
-import { Card } from 'antd'
+import { Card, Input } from 'antd'
 const { Meta } = Card
 import '../styles/home.css'
 
 function Home() {
     return (
-
+        
         <div className='card-wrap'>
+            <Input placeholder="Search for a pitch..." />
             <Card
             hoverable
             style={{
