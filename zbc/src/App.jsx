@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Router>
-      <Header className='header'>Zelene Blockchain</Header>
+      <Header className='header'>e-TULONG</Header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
