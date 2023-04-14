@@ -4,14 +4,38 @@ import '../styles/home.css'
 
 function Home() {
     return (
-        // Food & Agriculture
-        // Education
-        // Health
-        // Housing
-        // Environment
-        // Transportation
-        // Employment
-        <div className='card-wrap'>
+        <>
+        <div className='hero'>
+        <br />
+        <br />
+        <center>
+            <p className='hero-p'>On e-tulong, we helped</p>
+        </center>
+        <div className='hero-box'>
+              <div>
+                <center>
+                  <h2>80,556</h2>
+                  <p>projects funded</p>
+                </center>            
+              </div>
+              <div>
+                <center>
+                  <h2>Php 6,451,765</h2>
+                  <p>towards community work</p>
+                </center>            
+              </div>
+                <div>
+                <center>
+                  <h2>90,011</h2>
+                  <p>pledges</p>
+                </center>            
+              </div>
+            </div>  
+            
+            
+      </div>
+      <div className='card-wrap'>
+            
             <Input placeholder="Search for a pitch..." />
             <Card
             hoverable
@@ -90,7 +114,21 @@ function Home() {
                 <br />
                 <p>A job matching platform that uses AI to find the perfect fit for job seekers.</p>
             </Card>
+            <Card
+            hoverable
+            style={{
+                width: 240,
+            }}
+            cover={<img alt="example" height="300" src="https://myvistage.com/hub/wp-content/uploads/sites/4/2020/12/20_222_0124-Economic-Trends-Blog-1024x686-1.jpg" />}
+            >
+            <Meta title="PayMate" description="Business and Economy" />
+                <br />
+                <p>A payment solutions provider for businesses, offering secure and convenient digital payment options.</p>
+            </Card>
         </div>
+        </>
+       
+        
     )
 }
 

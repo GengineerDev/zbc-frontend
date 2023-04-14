@@ -1,5 +1,5 @@
 // import Home from './pages/Home'
-import { Layout } from 'antd'
+import { Layout, Divider } from 'antd'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import PitchPage from './pages/PitchPage'
@@ -11,13 +11,22 @@ function App() {
 
   return (
     <Router>
-      <Header className='header'>e-TULONG</Header>
+      <Header className='header'>
+        e-TULONG
+        <div className='right-buttons'>
+        <p><a href="/">home</a></p> 
+          <p><a href="#">about us</a></p> 
+          <p><a href="/login">login</a></p>
+        </div>
+      </Header>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         {/* to add specific paths for the card later */}
         <Route path="/pitch" element={<PitchPage />} /> 
-      </Routes>      
+      </Routes>
+        
     </Router>
   )
 }
